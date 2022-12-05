@@ -8,6 +8,8 @@ const routes_1 = require("./routes");
 const logger_1 = require("./utils/logger");
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
+// connect DB
+require("./utils/connectDB");
 const app = (0, express_1.default)();
 const port = 4000;
 // parse body request
